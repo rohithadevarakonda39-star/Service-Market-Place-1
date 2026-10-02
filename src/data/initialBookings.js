@@ -1,0 +1,190 @@
+// Initial seed bookings for demonstration of My Bookings & Booking Details
+export const initialBookings = [
+  {
+    id: 'SV-20261002-3109',
+    bookingId: 'SV-20261002-3109',
+    serviceId: 'srv-4',
+    serviceName: 'Jet-Clean Split AC Servicing & Gas Top-Up',
+    serviceImage: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80',
+    categoryName: 'AC Repair',
+    providerId: 'prov-1',
+    providerName: 'Marcus Vance',
+    providerPhone: '+1 (555) 234-8901',
+    providerImage: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+    problem: 'AC not cooling / warm air blowing',
+    problemDescription: 'The master bedroom AC turns on and fans spin, but no cold air is produced even on 18°C.',
+    severity: 'High',
+    instructions: 'Please call 10 minutes prior to arrival. Gate access code is #402.',
+    images: ['https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=400&q=80'],
+    date: 'Today, Oct 2, 2026',
+    timeSlot: '04:00 PM - 06:00 PM',
+    status: 'REQUESTED',
+    bookingStatus: 'REQUESTED',
+    address: '742 Evergreen Terrace, Apt 4B, Springfield Metro',
+    locationCoords: { lat: 37.7749, lng: -122.4194, name: 'Springfield Metro' },
+    isEmergency: true,
+    paymentMethod: 'Pay After Service',
+    paymentStatus: 'Pending',
+    pricing: {
+      basePrice: 65,
+      serviceFee: 5.00,
+      emergencyFee: 20.00,
+      tax: 7.20,
+      total: 97.20,
+      pricingType: 'starting'
+    },
+    liveTracking: {
+      statusText: 'Booking request sent to specialist. Awaiting confirmation.',
+      step: 1,
+      etaMinutes: 20
+    },
+    timeline: [
+      { title: 'Booking Requested', statusKey: 'REQUESTED', time: '10:05 AM', description: 'Customer initiated appointment request' }
+    ],
+    invoiceNumber: 'INV-2026-3109',
+    issueDate: 'Oct 02, 2026'
+  },
+  {
+    id: 'SVG-9042',
+    bookingId: 'SVG-9042',
+    serviceId: 'srv-3',
+    serviceName: 'Complete Home Electrical Wiring & Panel Safety',
+    serviceImage: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80',
+    categoryName: 'Electrician',
+    providerId: 'prov-1',
+    providerName: 'Marcus Vance',
+    providerPhone: '+1 (555) 234-8901',
+    providerImage: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
+    problem: 'Main switch trip & flickering lights',
+    problemDescription: 'Hallway circuit breaker trips every time microwave or heavy appliance runs.',
+    severity: 'Emergency',
+    instructions: 'Main electrical box is located next to garage entrance.',
+    images: ['https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80'],
+    date: 'Today, Oct 2, 2026',
+    timeSlot: '11:00 AM - 01:00 PM',
+    status: 'SERVICE_IN_PROGRESS',
+    bookingStatus: 'SERVICE_IN_PROGRESS',
+    address: '742 Evergreen Terrace, Apt 4B, Springfield Metro',
+    locationCoords: { lat: 37.7749, lng: -122.4194, name: 'Springfield Metro' },
+    notes: 'Main trip switch in hallway clicking intermittently.',
+    isEmergency: true,
+    paymentMethod: 'Credit Card (ending •••• 4242)',
+    paymentStatus: 'Paid Online',
+    pricing: {
+      basePrice: 55,
+      serviceFee: 5.50,
+      emergencyFee: 20.00,
+      tax: 6.44,
+      total: 86.94,
+      pricingType: 'fixed'
+    },
+    liveTracking: {
+      statusText: 'Provider is at your location & work is underway',
+      step: 3, // 1: Booked, 2: En Route, 3: On-Site, 4: Finished
+      etaMinutes: 0,
+      providerLatitude: 37.7749,
+      providerLongitude: -122.4194
+    },
+    timeline: [
+      { title: 'Booking Requested', statusKey: 'REQUESTED', time: '10:00 AM', description: 'Customer initiated emergency dispatch request' },
+      { title: 'Provider Accepted', statusKey: 'ACCEPTED', time: '10:15 AM', description: 'Marcus Vance confirmed arrival window' },
+      { title: 'Provider On The Way', statusKey: 'PROVIDER_ON_THE_WAY', time: '10:35 AM', description: 'Marcus departed from downtown facility' },
+      { title: 'Provider Arrived', statusKey: 'ARRIVED', time: '10:58 AM', description: 'Marcus checked in at building concierge' },
+      { title: 'Service Started', statusKey: 'SERVICE_STARTED', time: '11:05 AM', description: 'Diagnostic panel isolation in progress' }
+    ],
+    invoiceNumber: 'INV-2026-9042',
+    issueDate: 'Oct 02, 2026'
+  },
+  {
+    id: 'srv-8819',
+    bookingId: 'srv-8819',
+    serviceId: 'srv-1',
+    serviceName: 'Full Home Deep Cleaning & Sanitization',
+    serviceImage: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80',
+    categoryName: 'Home Cleaning',
+    providerId: 'prov-2',
+    providerName: 'Elena Rostova',
+    providerPhone: '+1 (555) 432-1098',
+    providerImage: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80',
+    problem: 'Full residential move-in deep cleaning',
+    problemDescription: 'Require multi-room sanitization, kitchen chimney degrease, and balcony wash.',
+    severity: 'Medium',
+    instructions: 'Key is under the front door mat. Cleaner can enter at 9 AM.',
+    images: ['https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=400&q=80'],
+    date: 'Saturday, Oct 4, 2026',
+    timeSlot: '09:00 AM - 01:00 PM',
+    status: 'ACCEPTED',
+    bookingStatus: 'ACCEPTED',
+    address: '1440 Pine Crest Blvd, Suite 12, West Hills',
+    notes: 'Please pay special attention to master bedroom balcony windows.',
+    isEmergency: false,
+    paymentMethod: 'Apple Pay',
+    paymentStatus: 'Paid Online',
+    pricing: {
+      basePrice: 89,
+      serviceFee: 8.90,
+      emergencyFee: 0,
+      tax: 7.83,
+      total: 105.73,
+      pricingType: 'starting'
+    },
+    liveTracking: {
+      statusText: 'Scheduled for Saturday morning dispatch',
+      step: 1,
+      etaMinutes: null,
+      providerLatitude: null,
+      providerLongitude: null
+    },
+    timeline: [
+      { title: 'Booking Received', time: 'Sep 30, 04:30 PM', description: 'Order confirmed and appointment locked' },
+      { title: 'Cleaner Allocated', time: 'Oct 01, 09:00 AM', description: 'Elena Rostova assigned to your service' }
+    ],
+    invoiceNumber: 'INV-2026-8819',
+    issueDate: 'Sep 30, 2026'
+  },
+  {
+    id: 'SVG-7420',
+    bookingId: 'SVG-7420',
+    serviceId: 'srv-4',
+    serviceName: 'Jet-Clean AC Servicing & Gas Top-Up',
+    serviceImage: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80',
+    categoryName: 'AC Repair',
+    providerId: 'prov-4',
+    providerName: 'Tariq Al-Mansoor',
+    providerPhone: '+1 (555) 901-2384',
+    providerImage: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80',
+    problem: 'Jet-clean AC indoor coil & filter wash',
+    problemDescription: 'Regular annual cooling maintenance and freon pressure test.',
+    severity: 'Low',
+    instructions: 'Ladder available on premises if required.',
+    images: ['https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=400&q=80'],
+    date: 'Sep 24, 2026',
+    timeSlot: '02:00 PM - 03:30 PM',
+    status: 'COMPLETED',
+    bookingStatus: 'COMPLETED',
+    address: '742 Evergreen Terrace, Apt 4B, Springfield Metro',
+    notes: 'Dual inverter AC filter clean and gas pressure check.',
+    isEmergency: false,
+    paymentMethod: 'Credit Card (ending •••• 4242)',
+    paymentStatus: 'Paid Online',
+    pricing: {
+      basePrice: 59,
+      serviceFee: 5.90,
+      emergencyFee: 0,
+      tax: 5.19,
+      total: 70.09
+    },
+    liveTracking: {
+      statusText: 'Service completed successfully',
+      step: 4,
+      etaMinutes: 0
+    },
+    timeline: [
+      { title: 'Booking Confirmed', time: 'Sep 23, 11:00 AM', description: 'Slot scheduled' },
+      { title: 'Technician Arrived', time: 'Sep 24, 02:02 PM', description: 'Tariq arrived on site' },
+      { title: 'Service Completed', time: 'Sep 24, 03:25 PM', description: 'AC jet cleaned, cooling at 16°C verified' }
+    ],
+    invoiceNumber: 'INV-2026-7420',
+    issueDate: 'Sep 24, 2026'
+  }
+];
